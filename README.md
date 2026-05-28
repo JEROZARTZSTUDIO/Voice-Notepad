@@ -66,3 +66,6 @@
  
 ## Thank you
   Thanks to [Sayan Mondal](https://www.github.com/sayanmondal2098) and I really appreciate all kinds of feedback. Thanks for using and supporting this project!
+
+## JEROZ ARTZ STUDIO Landing Mockup
+Run in browser: `landing/index.html`.
