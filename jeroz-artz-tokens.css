@@ -1,0 +1,103 @@
+:root {
+  /* Color */
+  --ja-color-obsidian: #0A0A0A;
+  --ja-color-ivory: #F6F2EA;
+  --ja-color-gallery: #FFFCF7;
+  --ja-color-carmine: #9E1B32;
+  --ja-color-gold: #B08A3C;
+  --ja-color-cobalt: #2D4BFF;
+  --ja-color-charcoal: #1B1B1B;
+  --ja-color-slate: #4B4B4B;
+  --ja-color-stone: #8E8A84;
+  --ja-color-mist: #D8D2C7;
+
+  /* Typography */
+  --ja-font-display: "Canela", "Noe Display", "Times New Roman", serif;
+  --ja-font-body: "Sohne", "Inter", "Helvetica Neue", Arial, sans-serif;
+  --ja-font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  --ja-fs-h1: clamp(3rem, 7vw, 5rem);
+  --ja-fs-h2: clamp(2.25rem, 5vw, 3.5rem);
+  --ja-fs-h3: clamp(1.75rem, 3vw, 2.25rem);
+  --ja-fs-lead: clamp(1.125rem, 2vw, 1.5rem);
+  --ja-fs-body: 1.125rem;
+  --ja-fs-meta: 0.75rem;
+
+  --ja-lh-h1: 0.95;
+  --ja-lh-h2: 1;
+  --ja-lh-h3: 1.1;
+  --ja-lh-lead: 1.5;
+  --ja-lh-body: 1.65;
+  --ja-lh-meta: 1.5;
+
+  --ja-tr-h1: -0.02em;
+  --ja-tr-h2: -0.015em;
+  --ja-tr-h3: -0.01em;
+  --ja-tr-meta: 0.08em;
+
+  /* Spacing */
+  --ja-space-1: 0.5rem;
+  --ja-space-2: 1rem;
+  --ja-space-3: 1.5rem;
+  --ja-space-4: 2rem;
+  --ja-space-5: 3rem;
+  --ja-space-6: 4rem;
+  --ja-space-7: 6rem;
+  --ja-space-8: 8rem;
+
+  /* Motion */
+  --ja-ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --ja-dur-fast: 120ms;
+  --ja-dur-medium: 240ms;
+  --ja-dur-slow: 400ms;
+
+  /* Borders */
+  --ja-border-thin: 1px;
+  --ja-border-strong: 2px;
+}
+
+.ja-page {
+  background: var(--ja-color-ivory);
+  color: var(--ja-color-obsidian);
+  font-family: var(--ja-font-body);
+}
+
+.ja-h1,
+.ja-h2,
+.ja-h3 {
+  font-family: var(--ja-font-display);
+  color: var(--ja-color-obsidian);
+  margin: 0;
+}
+
+.ja-h1 {
+  font-size: var(--ja-fs-h1);
+  line-height: var(--ja-lh-h1);
+  letter-spacing: var(--ja-tr-h1);
+}
+
+.ja-meta {
+  font-family: var(--ja-font-mono);
+  font-size: var(--ja-fs-meta);
+  line-height: var(--ja-lh-meta);
+  letter-spacing: var(--ja-tr-meta);
+  text-transform: uppercase;
+}
+
+.ja-divider {
+  width: 100%;
+  border: 0;
+  border-top: var(--ja-border-thin) solid var(--ja-color-gold);
+}
+
+.ja-link {
+  color: var(--ja-color-carmine);
+  text-decoration: none;
+  transition: color var(--ja-dur-fast) var(--ja-ease-editorial);
+}
+
+.ja-link:focus-visible,
+.ja-button:focus-visible {
+  outline: var(--ja-border-strong) solid var(--ja-color-cobalt);
+  outline-offset: 2px;
+}
