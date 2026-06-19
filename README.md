@@ -66,3 +66,40 @@
  
 ## Thank you
   Thanks to [Sayan Mondal](https://www.github.com/sayanmondal2098) and I really appreciate all kinds of feedback. Thanks for using and supporting this project!
+
+## Ejecutar en otra PC Windows sin Codex
+
+Este proyecto no necesita la app de Codex para ejecutarse en una PC Windows nueva. Puedes copiar o descargar el proyecto terminado y correrlo directamente con Python.
+
+### 1. Instalar requisitos en la nueva PC
+
+1. Instala Python 3 desde <https://www.python.org/downloads/>.
+2. Durante la instalación, marca la opción **Add Python to PATH**.
+3. Abre PowerShell en la carpeta del proyecto.
+4. Instala las dependencias:
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
+> Nota: si `PyAudio` falla al instalarse, instala primero `pipwin` y luego PyAudio:
+>
+> ```powershell
+> python -m pip install pipwin
+> pipwin install pyaudio
+> ```
+
+### 2. Abrir Voice Notepad
+
+En PowerShell, entra a la carpeta `Windows` del proyecto y ejecuta la app:
+
+```powershell
+cd Windows
+python voicenote.py
+```
+
+### 3. Diferencia con una app web
+
+Los comandos `npm install`, `npm run dev`, `npm run build` y `npm run preview` solo aplican a proyectos web de Node/Vite. Este repositorio es una app de escritorio en Python con interfaz Tkinter, por eso se abre como ventana local en Windows y no desde una URL del navegador.
+
+Si quieres usarla en otra PC, debes copiar el proyecto a esa PC e instalar Python y las dependencias allí. `localhost` o una IP como `http://192.168.x.x:4173/` no aplican para esta app de escritorio.
